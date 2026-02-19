@@ -10,6 +10,7 @@ public class HireNestApplication {
 		SpringApplication.run(HireNestApplication.class, args);
 		System.out.println("hi");
 		System.out.println("hello");
+		System.out.println("ok");
 	}
 
 }
