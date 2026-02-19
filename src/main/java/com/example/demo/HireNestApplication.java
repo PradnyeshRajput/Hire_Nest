@@ -8,6 +8,7 @@ public class HireNestApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(HireNestApplication.class, args);
+		System.out.println("hi");
 	}
 
 }
