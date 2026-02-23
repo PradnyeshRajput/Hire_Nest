@@ -3,7 +3,7 @@ package com.example.demo.Service;
 import org.springframework.stereotype.Service;
 
 import com.example.demo.Modals.*;
-import com.example.demo.RePository.StudentRepository;
+import com.example.demo.Repository.StudentRepository;
 
 import java.util.List;
 
