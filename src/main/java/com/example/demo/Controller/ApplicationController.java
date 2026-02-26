@@ -19,7 +19,7 @@ import com.example.demo.Service.HrServices;
 
 @RestController
 @RequestMapping("/api/applications")
-public class ApplicationCOntroller {
+public class ApplicationController {
 
     @Autowired
     private ApplicationRepository appRepo;
