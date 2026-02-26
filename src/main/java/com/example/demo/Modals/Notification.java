@@ -18,6 +18,7 @@ public class Notification {
     private String message;
     private String status; // READ / UNREAD
     private LocalDateTime createdAt;
+    private String email;
     @ManyToOne
     private Student student;
 	public Long getNotifId() {
@@ -54,4 +55,14 @@ public class Notification {
 		// TODO Auto-generated method stub
 		
 	}
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	public Student getStudent() {
+		return student;
+	}
+	
 }
