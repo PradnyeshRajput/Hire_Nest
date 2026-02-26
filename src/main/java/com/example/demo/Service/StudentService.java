@@ -12,6 +12,19 @@ public class StudentService {
 
     private final StudentRepository repository;
 
+    
+    public Student register(Student student) {
+        return repository.save(student);
+    }
+
+    public Student login(String email, String password) {
+        Student student = repository.findByEmail(email);
+        if(student != null && student.getPassword().equals(password)) {
+            return student;
+        }
+        return null;
+    }
+    
     public StudentService(StudentRepository repository) {
         this.repository = repository;
     }

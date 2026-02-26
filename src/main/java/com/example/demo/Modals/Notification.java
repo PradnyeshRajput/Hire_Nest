@@ -18,6 +18,8 @@ public class Notification {
     private String message;
     private String status; // READ / UNREAD
     private LocalDateTime createdAt;
+    @ManyToOne
+    private Student student;
 	public Long getNotifId() {
 		return notifId;
 	}
@@ -47,5 +49,9 @@ public class Notification {
 	}
 	public void setCreatedAt(LocalDateTime createdAt) {
 		this.createdAt = createdAt;
+	}
+	public void setStudent(Student student2) {
+		// TODO Auto-generated method stub
+		
 	}
 }

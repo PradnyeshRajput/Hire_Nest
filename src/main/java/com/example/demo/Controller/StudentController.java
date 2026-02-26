@@ -45,4 +45,19 @@ public class StudentController {
     public void delete(@PathVariable Long id) {
         service.deleteStudent(id);
     }
+    
+
+    @PostMapping("/register")
+    public Student register(@RequestBody Student student) {
+        return service.register(student);
+    }
+
+    @PostMapping("/login")
+    public String login(@RequestBody Student student) {
+        Student logged = service.login(student.getEmail(), student.getPassword());
+        if(logged != null)
+            return "Login Successful";
+        else
+            return "Invalid Credentials";
+    }
 }

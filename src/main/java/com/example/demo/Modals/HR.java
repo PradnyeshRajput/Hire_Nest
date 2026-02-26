@@ -18,6 +18,8 @@ public class HR {
 	    private String password;
 	    private String phone;
 	    private String status; // APPROVED / PENDING
+	    private String companyLocation;
+	    private String companyDescription;
 		public Long getHrId() {
 			return hrId;
 		}
@@ -54,5 +56,18 @@ public class HR {
 		public void setStatus(String status) {
 			this.status = status;
 		}
+		public String getCompanyLocation() {
+			return companyLocation;
+		}
+		public void setCompanyLocation(String companyLocation) {
+			this.companyLocation = companyLocation;
+		}
+		public String getCompanyDescription() {
+			return companyDescription;
+		}
+		public void setCompanyDescription(String companyDescription) {
+			this.companyDescription = companyDescription;
+		}
+		
 	
 }

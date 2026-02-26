@@ -20,6 +20,7 @@ public class Job {
     private String location;
     private String category;
     private LocalDate expiryDate;
+    private String type;
 
     public Long getJobId() {
 		return jobId;
@@ -88,4 +89,14 @@ public class Job {
 	@ManyToOne
     @JoinColumn(name = "hr_id")
     private HR hr;
+
+	public String getType() {
+		return type;
+	}
+
+	public void setType(String type) {
+		this.type = type;
+	}
+	
+	
 }
